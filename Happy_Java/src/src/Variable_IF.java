@@ -21,21 +21,22 @@ public class Variable_IF {
             }
             if (distinguish == 1) { //짝수홀수
                 System.out.println("숫자를 입력해 주세요");
+                int in = number.nextInt();
+                if (in % 2 == 0) { //짝수
+                    System.out.printf("%d 는 짝수입니다!", in);
+                } else if (in % 2 == 1) { //홀수
+                    System.out.printf("%d 는 홀수입니다!", in);
+                } else {
+                    System.out.println("잘못입력하셨습니다. 숫자를 입력해주세요"); //예외처리
+                    return;
+                }
             }
 
 
-            int in = number.nextInt();
-            if (in % 2 == 0) { //짝수
-                System.out.printf("%d 는 짝수입니다!", in);
-            } else if (in % 2 == 1) { //홀수
-                System.out.printf("%d 는 홀수입니다!", in);
-            } else {
-                System.out.println("잘못입력하셨습니다. 숫자를 입력해주세요"); //예외처리
-                return;
-            }
+
 
             if (distinguish == 2) { //큰값 찾기
-                System.out.println("숫자 3개를 입력해주세요");
+                System.out.println("숫자 3개를 스페이스바 또는 엔터로 구분하여 입력해주세요");
                 int first = number.nextInt();
                 int second = number.nextInt();
                 int third = number.nextInt();
