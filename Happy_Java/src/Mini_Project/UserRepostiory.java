@@ -3,7 +3,7 @@ package Mini_Project;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserRepository {
+public class UserRepostiory {
     private static List<User> users = new ArrayList<>();
 
     static { //저장소

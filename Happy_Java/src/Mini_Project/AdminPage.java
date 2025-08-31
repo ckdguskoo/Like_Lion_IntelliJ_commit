@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 
 public class AdminPage {
-    Scanner sc = new Scanner(System.in);
-
     public void addBook(){
         Scanner sc = new Scanner(System.in);
         System.out.println("책제목 : ");

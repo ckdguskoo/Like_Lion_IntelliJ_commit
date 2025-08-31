@@ -22,10 +22,9 @@ public class BookRepository {
     //제목찾아서 반환하는 메소드
     public static Book findBook(String name) {
         for (Book b : books) {
-            if (b.getName().equals(name)) {
+            if (b.getName().trim().equals(name)) {
                 return b;
             }
-
         }
         return null;
     }

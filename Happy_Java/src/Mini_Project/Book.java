@@ -26,30 +26,6 @@ public class Book {
         this.name = name;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public boolean isExistence() {
-        return existence;
-    }
-
-    public void setExistence(boolean existence) {
-        this.existence = existence;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
     //메소드 오버라이딩
     @Override
     public boolean equals(Object o) {

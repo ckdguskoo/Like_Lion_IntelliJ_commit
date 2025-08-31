@@ -15,9 +15,10 @@ public class UserPage {
         scanner.nextLine();
         System.out.println("생년월일 :");
         String birthday = scanner.nextLine();
-        UserRepository.useradd(new User(str,age,birthday));
+        UserRepostiory.useradd(new User(str,age,birthday));
         System.out.println("회원가입이 정상적으로 진행되었습니다.");
     }
+
     public void delUser(){
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("회원탈퇴를 진행합니다.");
@@ -28,7 +29,7 @@ public class UserPage {
         int age = scanner.nextInt();
         System.out.println("생년월일 :");
         String birthday = scanner.nextLine();
-        UserRepository.userdel(new User(str,age,birthday));
+        UserRepostiory.userdel(new User(str,age,birthday));
         System.out.println("회원탈퇴가 정상적으로 되었습니다.");
     }
 }

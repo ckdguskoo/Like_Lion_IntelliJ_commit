@@ -9,6 +9,7 @@ public class Main {
         BookSerach bookSerach = new BookSerach();
         AdminPage admin = new AdminPage();
         UserPage userPage = new UserPage();
+
         while (true){
             System.out.println("\n");
             System.out.println("=====원하시는 기능을 선택해 주세요=====");
@@ -83,7 +84,6 @@ public class Main {
                            System.out.println("잘못된 입력입니다. 다시 입력해주세요");
                            continue;
                    }
-
 
                default:
                    System.out.println("잘못된 입력입니다. 다시 입력해주세요");
